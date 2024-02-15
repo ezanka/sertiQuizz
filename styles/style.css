@@ -1,0 +1,89 @@
+body {
+  background-color: #121417;
+}
+
+#app-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 20px;
+}
+  
+#questions-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#score-container {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background: rgb(13, 110, 221);
+  padding: 10px 15px;
+  min-width: 100px;
+  min-height: 45px;
+  border-radius: 10px;
+}
+
+#app-title {
+  margin-top: 0;
+  font-size: 25px;
+  margin-bottom: 40px;
+  margin: 0 0 40px 20px;
+}
+
+#next-question-button {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background: rgb(13, 110, 221);
+  padding: 10px 15px;
+  min-width: 100px;
+  min-height: 45px;
+  border-radius: 10px;
+}
+  
+#next-question-button:hover {
+  background: rgba(13, 110, 221, 0.712);
+  transition: background ease .3s;
+}
+
+@media screen and (max-width: 500px) {
+
+  #app-container {
+    padding: 20px; 
+  }
+
+
+  #score-container {
+    right: 20px; 
+    top: 20px; 
+    font-size: 16px; 
+    min-width: auto; 
+  }
+  
+  #next-question-button {
+    bottom: 20px; 
+    right: 20px; 
+    font-size: 16px; 
+    min-width: auto; 
+  }
+} 
